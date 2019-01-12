@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WebAgency l'agence qui réalise vos rêves, design, responsive, perfomant, référencement naturel" />
+  <title>WebAgency - Projet 1</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- SEO -->
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@barre-gregoire.com/projet1" />
+<meta name="twitter:title" content="WebAgency" />
+<meta name="twitter:description" content="WebAgency créer votre site internet, dans un large éventail de solutions : vitrine, catalogue, e-commerce." />
+<meta name="twitter:image" content="images/ico/fapple-touch-icon-114-precomposed.png" /> <!-- l'image ne doit pas dépasser 120×120 pixels et pas plus de 1MB -->
+<!-- =========================================================================== -->
+
+    <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/ico/favicon.ico" /> <!-- Standard -->
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <!-- Script pour le portfolio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+    <script>
+        $(function () {
+            var $onglets = $(".onglet"),
+                $contenus = $(".contenu"),
+                ongletActif = "onglet-actif",
+                contenuActif = "contenu-actif";
+
+            /* au click sur un onglet */
+            $onglets.on("click", function (e) {
+                e.preventDefault();
+
+                /* si l'onglet est déjà actif */
+                if ($(this).hasClass(ongletActif)) return;
+
+                var $conteneur = $(this).closest(".bloc-portfolio");
+
+                /* on récupère le numéro de l'onget */
+                var index = $conteneur.find($onglets).index(this);
+
+                /* on enlève les éléments actifs avant */
+                $conteneur.find($onglets).removeClass(ongletActif);
+                $conteneur.find($contenus).removeClass(contenuActif);
+
+                /* on met le nouvel élément actif */
+                $(this).addClass(ongletActif);
+                $conteneur.find($contenus).eq(index).addClass(contenuActif);
+            });
+        });
+    </script>
+		<!-- fin script portfolio -->
+</head>
+
+<body>
+  
+<header id="header">
+
+
+<!-- Logo -->
+ <div id="logo">
+            <a href="#espaceslider"><img src="images/logo.png" alt="logo webagency"></a>
+ </div>
+
+<!-- Nav -->
+<nav>         
+            <ul>
+                <li><a class="active" href="#espaceslider">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+</nav>
+
+</header>
+
+<!-- SLIDER -->
+<div id="espaceslider"></div>
+<section id="slider">
+
+<div id="BG1" class="boxslider">
+
+    <nav class="navslider">
+        <a class ="prec" href="#BG2"><i class="fa fa-angle-left fa-2x"></i></a>
+        <a class ="next" href="#BG2"><i class="fa fa-angle-right fa-2x"></i></a>
+    </nav>
+
+    <div class="boxtext">
+        <h1>webagency: <span class="slogan">l'agence de tout vos projets !</span></h1>
+        <p>Réalisez vos projets avec nous !</p>
+        <a href="#services">Plus d'infos</a>
+    </div>
+</div>
+
+
+<div id="BG2" class="boxslider">
+
+    <nav class="navslider">
+        <a class ="prec" href="#BG1"><i class="fa fa-angle-left fa-2x"></i></a>
+        <a class ="next" href="#BG1"><i class="fa fa-angle-right fa-2x"></i></a>
+    </nav>
+
+    <div class="boxtext">
+        <h1>webagency: <span class="slogan">l'agence de tout vos projets !</span></h1>
+        <p>Réalisez vos projets avec nous !</p>
+        <a href="#services">Plus d'infos</a>
+    </div>
+</div>
+
+
+</section>
+<!-- FIN SLIDER -->
+
+
+<!-- SERVICES -->
+<section id="services">
+<div class="boxsections">
+  
+<div class="headersections">
+  
+    <h1>Nos services</h1>
+    <hr>
+    <p>La création de votre site internet, dans un large éventail de solutions : site vitrine, site catalogue, e-commerce...</p>
+
+</div>
+
+
+
+<div class="boxservicesdescription">
+  <div><img src="images/main-feature.png" alt="ordinateur"></div>
+
+  <div>
+
+  <div class="servicesdescription">
+    
+    <div class="logoservices">
+      
+  <div class="pointbleu"></div>
+  <i class="fas fa-chart-line"></i>
+  </div>
+
+<div class="servicestext">
+  <h3>UX design</h3>
+  <p>En s'appuyant sur une ergonomie innovante et cohérente, nous imaginons les solutions les plus adaptées aux exigences de votre projet, en respectant vos contraintes et en tenant compte des attentes et besoins de votre cible.</p>
+</div>
+
+  </div>
+
+
+
+<div class="servicesdescription">
+    
+    <div class="logoservices">
+            <div class="pointbleu"></div>
+            <i class="fas fa-cubes"></i>
+    </div>
+
+    <div class="servicestext">
+            <h3>UI design</h3>
+            <p>Nous traduisons visuellement vos idées en formes et couleurs afin de séduire votre cible sur votre site internet, votre charte graphique, votre application mobile et même vos campagnes publicitaires.</p>
+    </div>
+
+</div>
+ 
+
+
+
+<div class="servicesdescription">
+
+    <div class="logoservices">
+            <div class="pointbleu"></div>
+            <i class="fas fa-chart-pie"></i>
+    </div>
+
+    <div class="servicestext">
+            <h3>SEO</h3>
+            <p>Faites vous connaitre grâce à la recherche des internautes qui recherchent vos produits / services similaire. Nous optimisons le référencement naturel</p>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+</div>
+
+</div>
+</section>
+<!-- FIN SERVICES -->
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<div class="boxsections">
+
+<div class="headersections">
+  
+<h1>Nos projets</h1>
+<hr>
+<p>Nous vous invitons à découvrir une sélection des réalisations que notre agence web a pu concevoir ces dernières années.</p>
+
+</div>
+
+<!-- CONTENU PORTFOLIO -->
+<div class="bloc-portfolio">
+
+  <div class="onglets-portfolio">
+
+      <button class="onglet1 onglet ongletleft onglet-actif">All Works</button>
+
+      <button class="onglet2 onglet">Creative</button>
+
+      <button class="onglet3 onglet ">Corporate</button>
+
+      <button class="onglet4 onglet ongletright ">Portfolio</button>
+
+  </div>
+
+
+  <div class="contenus-portfolio">
+
+      <!-- Liste des différents contenus -->
+      <!-- Rajouter la classe "contenu-actif" pour l'onglet par défaut -->
+
+    <!-- onglet1 -->
+      <div class="contenu contenu-portfolio contenu-actif">
+
+          <figure>
+              <img src="images/portfolio/01.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Lunette - Nez</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/02.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Lapin rose</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Fabien</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/03.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Pompadour</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Thierry</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/04.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Tec-Art Architecture</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Leo</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/05.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/06.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/07.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Fabien</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/08.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Thierry</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+      
+
+      </div>
+    <!--===================================================== -->  
+
+    <!-- onglet2 -->
+      <div class="contenu">
+          <figure>
+              <img src="images/portfolio/03.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Thierry</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/04.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Leo</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+      </div>
+    <!--===================================================== --> 
+
+    <!-- onglet3 -->
+      <div class="contenu">
+      
+          <figure>
+              <img src="images/portfolio/05.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                  <h2>Corporate</h2>
+                  <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+          </figure>
+
+          <figure>
+              <img src="images/portfolio/06.jpg" alt="projet Portfolio item2">
+              <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                  <div>
+                      <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                  </div>
+              </figcaption>
+            </figure>
+
+      </div>
+    <!--===================================================== -->
+
+     <!-- onglet4 -->
+     <div class="contenu">
+
+        <figure>
+            <img src="images/portfolio/01.jpg" alt="projet Portfolio item2">
+            <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Gregoire</span></p>
+                <div>
+                    <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                </div>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/portfolio/02.jpg" alt="projet Portfolio item2">
+            <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Fabien</span></p>
+                <div>
+                    <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                </div>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/portfolio/07.jpg" alt="projet Portfolio item2">
+            <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Fabien</span></p>
+                <div>
+                    <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                </div>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/portfolio/08.jpg" alt="projet Portfolio item2">
+            <figcaption  class="portfolio">
+                    <h2>Corporate</h2>
+                    <p class="descriptionimage">projet réalisé par <span>Thi</span></p>
+                <div>
+                    <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+                </div>
+            </figcaption>
+        </figure>
+
+  </div>
+<!--===================================================== -->
+
+
+  </div>
+</div>
+
+<!-- FIN CONTENU PORTFOLIO -->
+</div>
+</section>
+<!-- FIN PORTFOLIO -->
+
+<!-- CONTACT -->
+<section id="contact">
+  
+    <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.431204606119!2d2.3454415680663883!3d48.873166307519575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1484233326288" width="600" height="650" allowfullscreen></iframe>
+    <div class="boxcontact">
+
+        <form>
+            <h2>Nous contacter</h2>
+            <p><span>WebAgency SAS</span><br/>25 rue d'Hauteville, 75010 PARIS<br/><abbr title="telephone webagency">Tel</abbr> : 01 02 03 04 05</p>
+
+            <input type="text" name="Nom" placeholder="Nom"/>
+            <input type="text" name="email" placeholder="Email"/>
+            <input type="text" name="Objet" placeholder="Objet"/>
+            <textarea rows="10" cols="50"></textarea>
+            <button class="buttonsend">Envoyer le message</button>
+        </form>
+
+    </div>
+
+
+
+</section>
+<!-- FIN CONTACT -->
+
+</body>
+</html>

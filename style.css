@@ -1,0 +1,676 @@
+body {
+    
+    font-family: 'Roboto-Light', sans-serif;
+    color: rgb(119,119,119);
+    margin: 0;
+    font-size: 16px;
+}
+header {
+    position: fixed;
+    z-index: 4;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+h1{
+    font-family: Roboto-Bold;
+    text-transform: uppercase;
+}
+h3{
+    width:100%;
+    font-size:26px;
+    font-weight: bold;
+    color:black;
+    font-family: roboto-bold;
+    margin:0px;
+}
+ strong{
+   font-family: roboto-bold; 
+ }
+#slider, #services, #portfolio, #contact{
+
+    width: 100%;
+    margin:0;
+}
+
+
+
+
+/* ====================================================================== */
+
+/* NAV */
+
+header {
+    position: fixed;
+    z-index: 4;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top:0;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(80,80,80);
+}
+li a:hover{
+    border-top:3px solid #136fa0;
+    padding-top: 38px;
+} 
+li a.active{
+    border-top:3px solid #136fa0;
+    padding-top: 38px;
+}
+/* enleve le cadre gris sur IE pour l'image cliquable */
+a img {
+    border: 0; 
+}
+
+/* SLIDER */
+#espaceslider{
+    height:100px;
+}
+nav.navslider a{
+    z-index: 2;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    text-decoration: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.fa-angle-right, .fa-angle-left {
+    color:white;
+    padding:20px;
+    overflow:hidden;
+}
+.fa-angle-left{
+    margin-left:20px;
+}
+.fa-angle-right{
+    margin-right:20px;
+}
+a.prec{
+    left:0;
+    margin-left:-35px;
+
+}
+a.next{
+    right:0;
+    margin-right:-35px;
+
+}
+
+#slider{
+    height: 700px;
+    color: white;
+    font-weight: bold;
+}
+.boxslider{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    }
+    
+.boxtext{
+    width:500px;
+    margin-left:220px;
+    }
+
+    .boxtext h1, h2{
+        margin:0;
+    }
+
+     .boxtext h1{
+        font-size:30px;
+        color: rgb(92,173,211);
+    }
+
+    .boxtext h2{
+        font-size:20px;
+    }
+
+    .slogan{
+        color:white;
+    }
+
+    .boxtext a{
+        color: white;
+        background-color: rgb(92,173,211);
+        padding: 10px 15px;
+        border-radius: 3px;
+        border-bottom: 3px solid rgb(68,148,187);
+        text-decoration: none;
+    }
+
+    .boxtext p{
+        padding-bottom:20px;
+    }
+#BG1{
+    background-image:url('images/slider/bg1.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#BG2{
+    background-image:url('images/slider/bg2.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Effet transition slide */
+#BG1 {
+    opacity: 1;
+    position: absolute;
+    overflow:hidden;
+}
+
+#BG2 {
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    overflow:hidden;
+}
+#BG2:target {
+    opacity: 1;
+}
+/* ====================================================================== */
+/* STYLE COMMUM SERVICES,CONTACT */
+
+hr {
+    overflow: visible; /* IE */
+    padding: 0;
+    border: none;
+    text-align: center;
+    width: 300px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(217,217,217,0), rgba(217,217,217,1), rgba(217,217,217,0));
+    margin-bottom: 30px;
+
+}
+hr::after {
+    content: "•";
+    display: inline-block;
+    position: relative;
+    font-size: 5em;
+    color:rgb(92,173,211);
+    line-height:5px;
+    border-radius:20px;
+    height:20px;
+    width:20px;
+
+}
+.headersections p{
+    max-width:720px;
+    display:flex;
+    margin:0 auto 30px;
+    text-align:center;
+}
+
+/* SERVICES */
+
+.boxsections{
+    width:100%;
+    margin:0 auto;
+
+}
+.headersections{
+    margin:0 auto;
+}
+.headersections h1{
+    font-size:50px;
+    margin:0 auto;
+    font-family: roboto-bold;
+    color:black;
+    text-align:center;
+    padding-top:140px; 
+    padding-bottom:25px;
+}
+.boxservicesdescription{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+}
+.boxservicesdescription img{
+    width:100%;
+    display:flex;
+margin:0 auto;
+}
+.logoservices{
+    display:flex;
+    left:0;
+
+}
+.servicesdescription{
+    display:flex;
+    max-width: 500px;
+    margin-top:20px;
+    
+}
+.logoservices {
+    height: 55px;
+    width: 55px;
+    min-width: 55px;
+    border-radius: 55px;
+    border: 1px solid rgb(217,217,217);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative; /* Positionnement  point bleue */
+    color: rgb(92,173,211);
+    padding:2px;
+    font-size: 20px;
+}
+.pointbleu {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb(92,173,211);
+    position: absolute;
+    top: 25px;
+    right: -5px;
+}
+.servicestext{
+    margin-left:20px;
+}
+.servicestext p{
+    text-align: justify;
+}
+/* ====================================================================== */
+
+/* PORTFOLIO */
+
+#portfolio{
+    background-color: rgb(245,245,245);
+}
+/* CONTENU PORTFOLIO */
+ 
+        .bloc-portfolio {
+            max-width:1200px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+     
+        /* redimensionne les images automatiquement */
+        .bloc-portfolio img {
+           width:100%;
+        }
+        /* bloc contenant les onglets */
+        .onglets-portfolio {
+            max-width: 500px;
+            margin: 0 auto 30px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* css pour chaque onglet */
+        .onglet {
+            display: inline-block;
+            background-color: #e5e5e5;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .ongletleft{
+            border-radius:5px 0 0 5px;
+        }
+        .ongletright{
+            border-radius:0 5px 5px 0;
+        }
+        /* enleve la petite bordure indiquant que le bouton est sélectionné */
+        .onglet:focus { outline: none; }
+        
+        /* CSS commun pour l'onglet au survol et l'onglet actif */
+        .onglet:hover, .onglet-actif {
+            background-color: #e5e5e5;
+        }
+        
+        /* CSS pour indiquer l'onglet actif */
+        .onglet-actif {
+            color:white;
+            background-color:#5cadd3;
+            border-bottom:3px solid #468cad;
+            pointer-events: none;
+        }
+        .onglet-actif::after {
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #468cad;
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            margin-top: 27px;
+            margin-left: -53px;
+        }
+        .onglet2:focus::after {
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #468cad;
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            margin-top: 27px;
+            margin-left: -47px;
+        }
+        .onglet3:focus::after {
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #468cad;
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            margin-top: 27px;
+            margin-left: -54px;
+        }
+        .onglet4:focus::after {
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #468cad;
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            margin-top: 27px;
+            margin-left: -48px;
+        }
+        /* bloc contenant les contenus */
+        .contenus-portfolio {
+            z-index: 5;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    
+        /* style de base pour un contenu */
+        .contenu {
+            overflow: hidden;
+            display: none; /* <-- on cache l'element par défaut */
+            transition: all 300ms;
+            justify-content: space-evenly;
+        }
+        
+        /* style d'un onglet actif */
+        .contenu-actif {
+            /* on affiche le contenu */
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        /* FIGURE IMAGE */ 
+
+        figure { 
+            position: relative; /* Positionnement de la légende au survol */
+            overflow: hidden; 
+            height: 175px;
+            width: 260px;
+            background-color: rgba(0,0,0,0);
+            margin:5px;
+        }
+        
+        /* Masque */
+        .inactive {
+            position: absolute;
+            background-color: rgba(0,0,0,.8);
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            bottom: 0;
+        }
+        .inactive div {
+            display: none;
+        }
+        
+        /* Légende au survol */ 
+        figcaption { 
+            position: absolute; 
+            background: rgba(0,0,0,0.4); 
+            color: white; 
+            width: 100%;
+            padding: 0 10px;;
+            opacity: 0;
+            bottom: -30%; 
+            left: 0;
+            transition: all 0.6s ease;
+        }
+        .portfolio h2{
+            font-size: 18px;
+            margin: 0px;
+            padding: 5px 5px 0px 5px;
+            text-align: justify;
+            font-family: roboto-bold;
+        }
+        .descriptionimage{
+            margin: 0px;
+            padding: 5px 5px 10px 5px;
+        }
+        .descriptionimage span{
+            font-family:roboto-bold;
+        }
+        figure:hover figcaption {
+            opacity: 1;
+            bottom: 0;
+        }
+        /* Bulle bleue avec logo oeil*/
+        figcaption div {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(69,144,177);
+            border-radius: 17.5px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 70%;
+            top: -20px;
+        }
+        
+        /* FIN FIGURE IMAGE */ 
+
+
+ /* FIN CONTENU PORTFOLIO */ 
+
+/* ====================================================================== */
+
+/* CONTACT */
+iframe{
+    background-color:yellow;
+}
+.googlemaps, .boxcontact {
+    width: 100%;
+    position: absolute;
+    height: 600px;
+}
+.googlemaps{
+    border:none;
+}
+.boxcontact{
+    background-color: rgba(92,173,211, .4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none;
+}
+.boxcontact form{
+    width:300px;
+    height:72%;
+    background-color:#FBFBFB;
+    margin: 0 180px;
+    opacity: 0.9;
+    padding:20px;
+    pointer-events: visible;
+}
+.boxcontact form h2{
+    text-align:left; 
+    color:black;
+    font-family: 'roboto-bold';
+    padding: 0 20px 0 20px;
+    opacity: 1;
+}
+.boxcontact form p{
+    text-align: left;
+    padding: 0 20px 20px 20px;
+    font-family: 'roboto-light';
+    opacity: 1;
+}
+.boxcontact form span{
+    Font-Weight: Bold;
+    opacity: 1;
+}
+input {
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    margin-left: -6px;
+    padding-left: 10px; 
+}
+textarea{
+    width: 102%;
+    height: 110px;
+    border: 2px solid white;
+    border-style: inset;
+    border-radius: 3px;
+    margin-left: -6px;
+}
+.buttonsend{
+    color: white;
+    background-color: rgb(92,173,211);
+    padding: 7px;
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(68,148,187);
+    text-decoration: none;
+    font-size: 15px;
+    margin-top:8px;
+}
+/* ====================================================================== */
+
+/* Version Mobile */ 
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 626px */
+@media screen and (max-width: 626px)
+{
+  header li a.active {
+        border-top: none;
+        padding-top: 38px;
+    } 
+
+   header li a:hover{
+        border-top:none;
+        padding-top: 38px;
+    } 
+
+    header ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding-left:0;
+    }
+
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1002px */
+@media screen and (max-width: 1002px)
+{
+    #slider{
+        height: 500px;
+        color: white;
+        font-weight: bold;
+    }
+    .boxslider{
+        position: relative; 
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        }
+
+    #BG1 {
+        background-color:rgb(245,245,245);
+        background-image: none;
+    }
+    #BG2 {
+        background-image: none;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .boxtext {
+        max-width: 350px;
+        margin:auto;
+
+    }
+    .boxtext p {
+        color:black;
+
+    }
+
+    .boxtext span {
+        color:black;
+
+    }
+
+    .boxtext h1 {
+        font-size:15px;
+
+    }
+    .navslider{
+        visibility: hidden;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 667px */
+@media screen and (max-width: 667px)
+{
+    .googlemaps, .boxcontact {
+        width: 100%;
+        margin:0;
+        position: inherit;
+   }
+
+   .boxcontact form{
+        width:100%;
+        height:100%;
+        background-color:#FBFBFB;
+        opacity: 0.9;
+        margin:0;
+}
+}
