@@ -1,15 +1,17 @@
-Vous venez d'être embauché(e) par une agence Web, la WebAgency, qui réalise des sites web pour différents clients. Cependant, ils reconnaissent eux-mêmes que leur site actuel est vieillissant car ils ont peu de temps pour travailler dessus. Certes, il paraît que les cordonniers sont les plus mal chaussés, mais tout de même...
+DÃ©mo : projet1-oc-barre-gregoire.netlify.app/
 
-On vous propose donc, pour votre première mission, de vous occuper de la refonte du site de l'agence.
+Vous venez d'Ãªtre embauchÃ©(e) par une agence Web, la WebAgency, qui rÃ©alise des sites web pour diffÃ©rents clients. Cependant, ils reconnaissent eux-mÃªmes que leur site actuel est vieillissant car ils ont peu de temps pour travailler dessus. Certes, il paraÃ®t que les cordonniers sont les plus mal chaussÃ©s, mais tout de mÃªme...
 
-Le site doit tenir sur une page avec un menu qui reste visible, en haut de la page, meme lorsque l'on se déplace dans la page. Les différentes sections attendues sont :
+On vous propose donc, pour votre premiÃ¨re mission, de vous occuper de la refonte du site de l'agence.
 
-- Un premier écran d'accueil de bienvenue, très visuel
+Le site doit tenir sur une page avec un menu qui reste visible, en haut de la page, meme lorsque l'on se dÃ©place dans la page. Les diffÃ©rentes sections attendues sont :
+
+- Un premier Ã©cran d'accueil de bienvenue, trÃ¨s visuel
 
 - La liste des services offerts par l'agence
 
-- Des exemples de projets déjà réalisés
+- Des exemples de projets dÃ©jÃ  rÃ©alisÃ©s
 
 - Une carte avec un formulaire de contact (on ne vous demande pas de faire marcher le formulaire, juste de l'afficher).
 
-Le site sera réalisé en HTML et CSS (sans framework tel que Bootstrap).
+Le site sera rÃ©alisÃ© en HTML et CSS (sans framework tel que Bootstrap).
